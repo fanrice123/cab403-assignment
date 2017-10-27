@@ -7,7 +7,7 @@ void test(void *);
 int main(void)
 {
     thrd_pool_t* pool = pool_create(4);
-    add_task(pool, test, NULL);
+    //add_task(pool, test, NULL, 0);
 
     sleep(1);
     pool_destroy(pool);
